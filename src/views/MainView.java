@@ -6,8 +6,15 @@ import javax.swing.JFrame;
 
 public class MainView extends JFrame {
 
+    TitlePanel titlePanel;
+    public AsitePanel asitePanel;
+    public AlphaPanel alphaPanel;
+    public AreaPanel areaPanel;
+    public VolumePanel volumePanel;
+    public ButtonsPanel buttonsPanel;
+
     public MainView() {
-        
+
     }
 
     public void initWindow() {
