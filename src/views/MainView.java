@@ -14,7 +14,13 @@ public class MainView extends JFrame {
     public ButtonsPanel buttonsPanel;
 
     public MainView() {
-
+        titlePanel = new TitlePanel();
+        asitePanel = new AsitePanel();
+        alphaPanel = new AlphaPanel();
+        volumePanel = new VolumePanel();
+        areaPanel = new AreaPanel();
+        buttonsPanel = new ButtonsPanel();
+        initWindow();
     }
 
     public void initWindow() {
@@ -28,7 +34,12 @@ public class MainView extends JFrame {
     }
 
     public void addComponents() {
-        
+        add(this.titlePanel);
+        add(this.asitePanel);
+        add(this.alphaPanel);
+        add(this.buttonsPanel);
+        add(this.volumePanel);
+        add(this.areaPanel);
     }
     
 }
